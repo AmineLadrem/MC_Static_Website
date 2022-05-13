@@ -390,3 +390,52 @@ p {
     opacity: 1;
   }
 }
+
+.gallery {
+  padding: 5em var(--sidePadding);
+  display: grid;
+  grid-template-columns: repeat(10, 80vw);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  height: 90vh;
+  scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+}
+.carou img {
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+.active {
+  scroll-snap-type: unset;
+}
+.carou {
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+}
+element {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+element::-webkit-scrollbar {
+  display: none;
+  width: 12px;
+}
+element::-webkit-scrollbar-track {
+  background: #0b0016;
+}
+element::-webkit-scrollbar-thumb {
+  background-color: #0b0016; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #7400ff; /* creates padding around scroll thumb */
+}
