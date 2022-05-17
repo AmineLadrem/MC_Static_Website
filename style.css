@@ -251,7 +251,7 @@ p {
 }
 .speaker-visual .speaker-socials .speaker-social {
   transform: translateY(5em);
-  transition: transform 300ms ease-out;
+  transition: transform 400ms ease-out;
 }
 .speaker-visual .speaker-socials .speaker-social:nth-child(2) {
   transition-delay: 100ms;
@@ -259,11 +259,14 @@ p {
 .speaker-visual .speaker-socials .speaker-social:nth-child(3) {
   transition-delay: 200ms;
 }
+.speaker-visual .speaker-socials .speaker-social:nth-child(4) {
+  transition-delay: 300ms;
+}
 .speaker-visual:hover .speaker-socials .speaker-social {
   transform: translateY(0);
 }
 .speaker-visual > img {
-  transition: transform 300ms ease-out;
+  transition: transform 400ms ease-out;
 }
 .speaker-visual:hover > img {
   transform: scale(1.1);
@@ -442,11 +445,11 @@ element::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid #7400ff; /* creates padding around scroll thumb */
 }
-#box01{
-  float:left; 
-  width:50% 
+#box01 {
+  float: left;
+  width: 50%;
 }
-#box02{
-  float:right ; 
-  width:50% 
+#box02 {
+  float: right;
+  width: 50%;
 }
