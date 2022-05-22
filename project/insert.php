@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
         $Matricule = $_POST['Matricule'];
         $host = "localhost";
         $dbUsername = "root";
-        $dbPassword = "moha2002";
+        $dbPassword = "";
         $dbName = "register";
         global $registered;
         global $sendmail;
