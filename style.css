@@ -404,7 +404,7 @@ p {
   grid-template-rows: 1fr;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: scroll;
   height: 90vh;
   scroll-snap-type: both mandatory;
@@ -430,7 +430,7 @@ p {
 }
 element {
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: scroll;
   overflow-y: scroll;
 }
 element::-webkit-scrollbar {

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MC Contacts</title>
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images\MC.svg">
+    <link rel="shortcut icon" href="images\Logo_-_MC_1-01 (3).svg" />
+
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a class="nav-logo" href="https://www.microclub.com">
+        <img src="images/MC.svg" alt="" class="main-nav-image" />
+      </a>
+      <ul class="main-nav-elements" style="font-size: 90% ; ">
+        <li class="main-nav-element">
+          <a href="https://www.microclub.net">Micro club</a>
+        </li>
+        <li class="main-nav-element"><a href="index.html">Main Page</a></li>
+        <li class="main-nav-element"><a href="#Contact"> Our Socials </a></li>
+        <li class="main-nav-element"><a href="#Location"> Location </a></li>
+         <li class="main-nav-element"><a href="#contact-parts"> Contact </a></li>
+         <button class="button" style="padding : 10px;" 
+         onclick="location.href='http://localhost/project/form.html'"
+          type="button">
+          Register in the Club</button>
+      </ul>
+    </nav>
+    <header id="Home">
+      <section> 
+        <div class="gify"> 
+          <div id="box01"> <h1 id="MicroClub"> MICRO CLUB </h1> </div> 
+          <div id="box02" style="width:15%">   <iframe src="https://giphy.com/embed/srH7tMXG0tXymEPHJU" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div> 
+    
+        <div class="info">
+          <h4> Join Us here ! </h4>
+          <a href="https://www.google.com/maps/place/Micro+Club/@36.720646,3.185523,14z/data=!4m5!3m4!1s0x0:0x2b982194dc321c1d!8m2!3d36.720646!4d3.1855236?hl=en"> Click here to get our location </a>
+          <a href="#contact-parts" class="button secondary">Our Socials</a>
+        </div>
+      </section>
+    </header>
+    <main>
+<hr> 
+      <section id="Location">
+          <H1>location</H1>
+        <h2 style="text-decoration:underline; "> Map </h2>
+        <br> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12792.319044831096!2d3.185523!3d36.7206456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b982194dc321c1d!2sMicro%20Club!5e0!3m2!1sen!2sdz!4v1652220238329!5m2!1sen!2sdz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+    <footer>
+     <hr> 
+      </section>
+      <section id="Contact">
+        <div class="contact-parts">
+        <div class="speaker">
+          <div class="speaker-visual">
+            <img class="speaker-img" src="images\MC.svg" alt="" />
+            <ul class="speaker-socials">
+              <li class="speaker-social">
+                <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                  ><img src="images\facebook-f-brands.svg"
+                /></a>
+              </li>
+              <li class="speaker-social">
+                <a href="https://www.instagram.com/microclub_usthb/"
+                  ><img src="./images/instagram-brands.svg"
+                /></a>
+              </li>
+              <li class="speaker-social">
+                <a href="https://www.linkedin.com/in/micro-club-usthb/"
+                  ><img src="images\linkedin-in-brands.svg"
+                /></a>
+              </li>
+              <li class="speaker-social">
+                <a href="https://discord.gg/R29NzRAA"
+                  ><img src="images\discord.svg"
+                /></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div> 
+        <div class="contact-parts">
+          <h6>Contact Us</h6>
+          <a href="#Location">Confrence Room USTHB</a>
+          <a href="mailto:microclub@usthb.dz">microclub@usthb.dz</a>
+          <a class="contact-phone" href="tel:+213 888888888"
+            >(+213) 888 88 88 88</a
+          >
+        </div>
+        <div id="contact-parts">
+          <h6>Subscribe Newsletter</h6>
+          <p>
+           Enter your email to sign up and receive updates on new events announcements, early access and more ! 
+          </p>
+          <input class="input" type="email" name="email" />
+          <button class="button" id="subscribe">
+            Subscribe for more details
+          </button>
+        </div>
+      </section>
+      <hr />
+      <p id="copyright"> 
+        Copyright ©2022 All rights reserved
+        <a href="https://www.microclub.net">@MicroClub</a>
+      </p> 
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
+    <script src="./js/slides.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({ items: 4, nav: true });
+      });
+    </script>
+  </body>
+</html>
