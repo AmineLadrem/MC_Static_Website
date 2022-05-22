@@ -1,11 +1,10 @@
-
 <?php
 if (isset($_POST['submit'])) {
     if (isset($_POST['Name']) && isset($_POST['LastName']) &&
         isset($_POST['Major']) && isset($_POST['Faculty']) && isset($_POST['Email']) &&isset($_POST['phonenumber']) &&
         isset($_POST['AcademicYear']) && isset($_POST['Matricule'])) {
         
-            //get form data 
+    
         $Name = $_POST['Name'];
         $LastName = $_POST['LastName'];
         $Major = $_POST['Major'];
@@ -16,7 +15,7 @@ if (isset($_POST['submit'])) {
         $Matricule = $_POST['Matricule'];
         $host = "localhost";
         $dbUsername = "root";
-        $dbPassword = "";
+        $dbPassword = "moha2002";
         $dbName = "register";
         global $registered;
         global $sendmail;
@@ -27,7 +26,8 @@ if (isset($_POST['submit'])) {
         global $phonenumberfail;
         global $matriculefail;
         global $success;
-        //connect to database 
+      
+        
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
         $success=0;
         if ($conn->connect_error) {
@@ -46,7 +46,6 @@ if (isset($_POST['submit'])) {
             $stmt->fetch();
             $rnum = $stmt->num_rows;
             if ($rnum == 0) {
-
                 $stmt = $conn->prepare($Select2);
                 $stmt->bind_param("s", $phonenumber);
                 $stmt->execute();
@@ -55,7 +54,6 @@ if (isset($_POST['submit'])) {
                 $stmt->fetch();
                 $rnum = $stmt->num_rows;
                 if ($rnum == 0) {
-
                     $stmt = $conn->prepare($Select3);
                     $stmt->bind_param("s", $Matricule);
                     $stmt->execute();
@@ -63,17 +61,14 @@ if (isset($_POST['submit'])) {
                     $stmt->store_result();
                     $stmt->fetch();
                     $rnum = $stmt->num_rows;
-
-
                     if ($rnum == 0) {
-
                 $stmt->close();
                 $stmt = $conn->prepare($Insert);
                 $stmt->bind_param("ssssssss",$Name ,$LastName ,$Major,$Faculty, $Email,$phonenumber, $AcademicYear,  $Matricule);
                 if ($stmt->execute()) {
                   $registered=   "Registration done succefully \r\n";
                   $success=1;
-                    //sending the email 
+            
                     $to =$Email;
                     $subject  = 'Registration Email';
                     $message  = 'Hi, this is an automatic email sent after your successful registration ! ';
@@ -85,7 +80,6 @@ if (isset($_POST['submit'])) {
                      $sendmail= "Registration Email sent check your inbox [Spam as well]";
                     else
                         $emailfail= "Email sending failed";
-
                 }
                 else {
                     echo $stmt->error;
@@ -181,7 +175,7 @@ p{
         </button> 
 
         <?php if($success==0){
-echo "<button class='button' style='padding: 10px ; margin-left:10px' onclick='location.href='http://localhost/project/form.html'' type='button'>";
+echo "<button class='button' style='padding: 10px ; margin-left:10px' onclick=location.href='http://localhost/project/form.php' type='button'>";
 echo " Go Back ";
 echo "</button>";
         }
