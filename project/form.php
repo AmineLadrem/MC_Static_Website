@@ -204,7 +204,7 @@ form{
     <?php
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$link = mysqli_connect("localhost", "root", "moha2002", "register");
+$link = mysqli_connect("localhost", "root", "", "register");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
