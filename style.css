@@ -171,7 +171,7 @@ p {
 /*---------- HOME -----------------*/
 #Home {
   height: 100vh;
-  background: url(./images/background.jpg);
+  background: url(https://1.bp.blogspot.com/-zjCYTCkF0CU/XvrKoQYSK4I/AAAAAAAAD7A/FwZseJM0uQAAjDxA--DkHOXQ6P7Z9jfjwCK4BGAsYHg/d/OUTRUN-4K-WALLPAPER-SATURN.png);
   background-size: cover;
   display: flex;
 }
@@ -464,4 +464,43 @@ element::-webkit-scrollbar-thumb {
   bottom: 23px;
   right: 28px;
   width: 280px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0dog);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
 }
