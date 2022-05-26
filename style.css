@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;1,100;1,200&family=Mitr:wght@200;300;400;500&family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap");
 :root {
   --primary: #7400ff;
   --secondary: #4700ff;
@@ -6,8 +6,8 @@
   --grey: #9b9eac;
   --light: #fff;
   --dark: #0a0a0a;
-  --main-font: "Tapestry", cursive;
-  --secondary-font: "Macondo", cursive;
+  --main-font: "Radio Canada", sans-serif;
+  --secondary-font: "Radio Canada", sans-serif;
   --sidePadding: 12%;
 }
 * {
