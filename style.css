@@ -171,9 +171,11 @@ p {
 /*---------- HOME -----------------*/
 #Home {
   height: 100vh;
-  background: url(https://1.bp.blogspot.com/-zjCYTCkF0CU/XvrKoQYSK4I/AAAAAAAAD7A/FwZseJM0uQAAjDxA--DkHOXQ6P7Z9jfjwCK4BGAsYHg/d/OUTRUN-4K-WALLPAPER-SATURN.png);
+  background: url(images\black.gif);
   background-size: cover;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #Home::before {
   content: " "; /* important */
