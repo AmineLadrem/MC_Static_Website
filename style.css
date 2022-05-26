@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap");
 :root {
   --primary: #7400ff;
-  --secondary: #4700ff;
+  --secondary: #6633cc; 
   --background: #0b0016;
   --grey: #9b9eac;
   --light: #fff;
@@ -72,7 +72,7 @@ body {
 .button,
 .button.secondary:hover {
   background-color: var(--primary);
-  color: var(--dark);
+  color: var( --light);
   font-weight: 700;
   text-transform: uppercase;
   padding: 0.8em 1.8em;
@@ -92,8 +92,9 @@ body {
   position: absolute;
   left: 0;
   top: 2em;
-  background-color: var(--light);
+  background-color:  var(--primary);
   padding: 0;
+  border: 1px solid black;
 }
 .hover-menu a {
   color: var(--dark);
