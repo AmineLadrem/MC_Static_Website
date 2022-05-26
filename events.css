@@ -26,3 +26,6 @@ dt {
   float: left;
   width: 50%;
 }
+hover-element { 
+    color: var(--light)
+}

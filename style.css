@@ -97,7 +97,7 @@ body {
   border: 1px solid black;
 }
 .hover-menu a {
-  color: var(--dark);
+  color: var(--light);
   text-decoration: none;
   padding: 1em;
 }
