@@ -171,7 +171,7 @@ p {
 /*---------- HOME -----------------*/
 #Home {
   height: 100vh;
-  background: url(images\blue.png);
+  background: url(blue.png);
   background-size: cover;
   display: flex;
   background-position: center;
