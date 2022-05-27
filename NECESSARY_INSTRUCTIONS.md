@@ -1,4 +1,18 @@
 # MC_Static_Website2
+----------------------------------------------------------------------
+Les pages :
+
+Index.html-->Page Accueil
+
+events.html-->Page Evènements
+
+about.html-->Page Présentation
+
+contact.html-->Page Contact
+
+insert.php et form.php ( vous les trouvez dans le dossier project !)-->Page Inscription
+
+-------------------------------------------------------------------------------------------------
 in order for the registration button to work you have to follow those steps:
 
 //Pour le button d'inscrire ( au niveau de la page inscription) je vous mentionner la configuration suivante :
