@@ -1,11 +1,16 @@
 # MC_Static_Website2
 in order for the registration button to work you have to follow those steps:
+//Pour le button d'inscrire ( au niveau de la page inscription) je vous mentionner la configuration suivante :
 
-1/put the file named project that contains the php code in the following path 'C:\wamp64\www' (where you installed wampserver ) 
+1/put the folder named project that contains the php files(form.php and insert.php) in the following path 'C:\wamp64\www' (where you installed wampserver ) 
+//Mettez le dossier (project) ou contient les fichiers(form.php et insert.php) dans le path suivant 'C:\wamp64\www' (ou vous avez instale wampserver ) 
 
 2/ download and add the sendmail unziped file and put it in the wamp server file as well ---> here is the link : https://www.glob.com.au/sendmail/ 
+// telecharger et ajouter le dossier sendmail et metter le dans le dossier wamp64 'C:\wamp64\www' ---> Lien https://www.glob.com.au/sendmail/ 
+
 
 3/ go to sendmail.ini and paste this code 
+//modifier le fichier sendmail.ini ( se trouve dans le dossier sendmail) et modifier le avec se code suivant :
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 [sendmail]
@@ -77,9 +82,13 @@ hostname=localhost
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-4/ update your php.ini ( from wampserver by adding this code instead) --> search smtp in your php.ini (press Ctrl F to search ) and add the path to the sendmail file.executable it should look like this --> sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i" 
-
-5/ put in comments all the code from the mail function until the sendmail_path  / your code should look like this 
+4/ update your php.ini( you will find it in the task bar , then by left click on wampserver's icon , go to php-->php-->php.ini) ( from wampserver by adding this code instead) .then, search [mail function] in your php.ini (press Ctrl F to search ) and add the path to the sendmail file.executable it should look like this --> sendmail_path = "C:\wamp64\sendmail\sendmail.exe -t -i" 
+//modifier le fichier php.ini (se trouve par click gauche sur l'icon de wampserver se trouve sur la barre de tache ->php->php.ini)(apres clicker Ctrl+F et  rechercher
+ [mail function] et copier le code suivant)
+ 
+ 
+5/ put in comments all the code from the mail function until the sendmail_path :
+//metter des ( ; ) au debut de chaque ligne apres  [mail function] jusqu'a sendmail_path , en copiant le code suivant  :
 
 [mail function]
 
