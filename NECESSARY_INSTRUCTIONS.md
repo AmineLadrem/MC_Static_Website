@@ -1,15 +1,19 @@
 # MC_Static_Website2
 in order for the registration button to work you have to follow those steps:
+
 //Pour le button d'inscrire ( au niveau de la page inscription) je vous mentionner la configuration suivante :
 
 1/put the folder named project that contains the php files(form.php and insert.php) in the following path 'C:\wamp64\www' (where you installed wampserver ) 
+
 //Mettez le dossier (project) ou contient les fichiers(form.php et insert.php) dans le path suivant 'C:\wamp64\www' (ou vous avez instale wampserver ) 
 
 2/ download and add the sendmail unziped file and put it in the wamp server file as well ---> here is the link : https://www.glob.com.au/sendmail/ 
+
 // telecharger et ajouter le dossier sendmail et metter le dans le dossier wamp64 'C:\wamp64\www' ---> Lien https://www.glob.com.au/sendmail/ 
 
 
 3/ go to sendmail.ini and paste this code 
+
 //modifier le fichier sendmail.ini ( se trouve dans le dossier sendmail) et modifier le avec se code suivant :
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
