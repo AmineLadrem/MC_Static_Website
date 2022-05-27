@@ -1,7 +1,10 @@
 # MC_Static_Website2
 in order for the registration button to work you have to follow those steps:
-1/put the file named project that contains the php code in the following path C:\wampx64\www (where you installed wampserver ) 
+
+1/put the file named project that contains the php code in the following path 'C:\wampx64\www' (where you installed wampserver ) 
+
 2/ download and add the sendmail unziped file and put it in the wamp server file as well ---> here is the link : https://www.glob.com.au/sendmail/ 
+
 3/ go to sendmail.ini and paste this code 
 <!-------------------
 [sendmail]
@@ -72,7 +75,9 @@ force_recipient=
 hostname=localhost
 
 ---------->
-4/ change your php.ini ( from wampserver by adding this code instead) --> search smtp in your php.ini (press Ctrl F to search ) and add the path to the sendmail file.executable it should look like this --> sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i" 
+
+4/ update your php.ini ( from wampserver by adding this code instead) --> search smtp in your php.ini (press Ctrl F to search ) and add the path to the sendmail file.executable it should look like this --> sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i" 
+
 5/ put in comments all the code from the mail function until the sendmail_path  / your code should look like this 
 
 [mail function]
