@@ -103,7 +103,7 @@ hostname=localhost
 
 ; http://php.net/sendmail-path
 
-sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i"
+sendmail_path = "C:\wampx64\sendmail\sendmail.exe -t -i"
 
-
+[PS : ALL THE FILES AND CODE MENTIONNED HERE WILL BE AT NECESSARY FILES TO DOWNLOAD ]
 
