@@ -6,7 +6,8 @@ in order for the registration button to work you have to follow those steps:
 2/ download and add the sendmail unziped file and put it in the wamp server file as well ---> here is the link : https://www.glob.com.au/sendmail/ 
 
 3/ go to sendmail.ini and paste this code 
-<!-------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 [sendmail]
 
 ; you must change mail.mydomain.com to your smtp server,
@@ -74,25 +75,35 @@ force_recipient=
 
 hostname=localhost
 
----------->
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4/ update your php.ini ( from wampserver by adding this code instead) --> search smtp in your php.ini (press Ctrl F to search ) and add the path to the sendmail file.executable it should look like this --> sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i" 
 
 5/ put in comments all the code from the mail function until the sendmail_path  / your code should look like this 
 
 [mail function]
+
 ; For Win32 only.
+
 ; http://php.net/smtp
+
 ;SMTP = localhost
+
 ; http://php.net/smtp-port
+
 ;smtp_port = 25
 
 ; For Win32 only.
+
 ; http://php.net/sendmail-from
+
 ;sendmail_from ="admin@wampserver.invalid"
 
 ; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+
 ; http://php.net/sendmail-path
+
 sendmail_path = "D:\wamp\sendmail\sendmail.exe -t -i"
+
 
 
